@@ -1,0 +1,9 @@
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes planet-float { 0%, 100% { transform: translateY(0) rotateZ(-1deg); } 50% { transform: translateY(-12px) rotateZ(1deg); } }
+@keyframes planet-pulse { 0%, 100% { transform: scale(.96); opacity: .42; } 50% { transform: scale(1.08); opacity: .9; } }
+@keyframes stars-drift { from { transform: translate3d(-5px, 4px, 0) scale(.96); opacity: .55; } to { transform: translate3d(6px, -5px, 0) scale(1.05); opacity: .95; } }
+@keyframes brand-shimmer { 0%, 72%, 100% { background-position: 200% center; } 36% { background-position: -30% center; } }
+@keyframes page-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes logo-reveal { 0% { opacity: 0; filter: blur(16px); transform: translateY(10px) scale(.94); } 65% { opacity: 1; filter: blur(0); transform: none; } 100% { text-shadow: 0 0 25px rgba(115,240,109,.4); } }
+.hero h1 { animation: logo-reveal 1.35s .25s both ease-out, logo-breathe 5s 1.8s ease-in-out infinite; }
+@keyframes logo-breathe { 0%, 100% { letter-spacing: -.08em; } 50% { letter-spacing: -.055em; } }

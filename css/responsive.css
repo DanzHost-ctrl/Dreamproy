@@ -1,0 +1,9 @@
+/* Responsive tuning is kept here as a separate extension point.
+   The bundled style.css already contains the mobile-first breakpoints.
+   Add project-specific overrides below without touching the base system. */
+@media (max-width: 420px) {
+  .hero-buttons .button { width: 100%; }
+  .search-panel { flex-wrap: wrap; }
+  .search-panel .button { width: 100%; }
+  .detail-stats { grid-template-columns: 1fr 1fr; }
+}
